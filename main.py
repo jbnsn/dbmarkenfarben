@@ -1,4 +1,4 @@
-"""DeutscheBahnMarkenFarben."""
+"""Deutsche Bahn Markenfarben."""
 
 
 class DeutscheBahnMarkenFarben:
@@ -9,12 +9,11 @@ class DeutscheBahnMarkenFarben:
 
     Example usage:
 
-        dbcolors = DeutscheBahnMarkenFarben()
+        dbmf = DeutscheBahnMarkenFarben()
 
-        dbcolors.print_colors()
-
-        print(dbcolors.get('red'))
-        print(dbcolors.get('red', 300, 'rgb'))
+        dbmf.print_colors()  # Returns a list of available colours.
+        dbmf.get('red')  # Returns '#ec0016'
+        dbmf.get('red', 200, 'rgb')  # Returns (252, 200, 195)
 
     """
 
@@ -164,7 +163,7 @@ class DeutscheBahnMarkenFarben:
         }
 
     def html_to_rgb(self, hex_color):
-        """Convert HTML color code to RGB color code."""
+        """Convert HTML colour code to RGB colour code."""
         hex_color = hex_color.lstrip('#')
         return tuple(int(hex_color[i:i+2], 16) for i in (0, 2, 4))
 
@@ -180,12 +179,12 @@ class DeutscheBahnMarkenFarben:
         Parameters
         ----------
         color_name : str
-            Name of the brand colour of Deutsche Bahn AG.
+            Name of the Deutsche Bahn AG brand colour..
             https://marketingportal.extranet.deutschebahn.com/marketingportal/Marke-und-Design/Basiselemente/Farbe
         color_saturation : int, optional
             100, 200, 300, 400, 500, 600, 700 or 800. The default is 500.
         return_format : str, optional
-            Whether the html or rgb color code shall be returnd.
+            Whether to return the html or rgb colour code.
             The default is 'html'.
 
         Raises
@@ -212,7 +211,7 @@ class DeutscheBahnMarkenFarben:
             raise ValueError("Invalid return format. Choose 'html' or 'rgb'.")
 
     def print_colors(self):
-        """Print set of the avaialble colors."""
+        """Print and return the set of available colours."""
         colors = sorted(set([k[0] for k in self.colors.keys()]))
         print(colors)
         return colors
