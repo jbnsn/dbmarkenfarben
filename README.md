@@ -8,7 +8,6 @@ Get the html or rgb code of one of the [Deutsche Bahn AG brand colours](https://
 ## `get` function
 ```Python
 get(
-    self,
     color_name,
     color_saturation=500,
     return_format='html'
