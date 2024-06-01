@@ -6,7 +6,7 @@ Get the html or rgb code of one of the [Deutsche Bahn AG brand colours](https://
 ![Brand colours of Deutsche Bahn AG](https://marketingportal.extranet.deutschebahn.com/resource/blob/9688184/6b6042de4d93449f5546cdd01ca94ebe/Bild_1-data.png)
 
 ## `get` function
-```
+```Python
 get(
     self,
     color_name,
