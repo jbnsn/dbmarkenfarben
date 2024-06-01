@@ -1,5 +1,5 @@
 # Deutsche Bahn Markenfarben
-Get the html or rgb code of one of the Deutsche Bahn AG brand colours.
+Get the html or rgb code of one of the [Deutsche Bahn AG brand colours](https://marketingportal.extranet.deutschebahn.com/marketingportal/Marke-und-Design/Basiselemente/Farbe).
 
 `['blue', 'burgundy', 'cool-grey', 'cyan', 'green', 'light-green', 'orange', 'pink', 'red', 'turquoise', 'violet', 'warm-cyan', 'warm-grey', 'yellow']`
 
