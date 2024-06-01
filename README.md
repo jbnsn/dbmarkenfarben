@@ -29,7 +29,7 @@ get(
     Raises
     ------
     ValueError
-        Invalid return format..
+        Invalid return format.
 
     Returns
     -------
