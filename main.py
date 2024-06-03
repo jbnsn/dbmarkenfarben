@@ -169,7 +169,7 @@ class DeutscheBahnMarkenFarben:
 
     def get(
             self,
-            color_name,
+            color_name='red',
             color_saturation=500,
             return_format='html'
             ):
@@ -190,7 +190,7 @@ class DeutscheBahnMarkenFarben:
         Raises
         ------
         ValueError
-            Invalid return format.
+            If the `color_name` is not available.
 
         Returns
         -------
