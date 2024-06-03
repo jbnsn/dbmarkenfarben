@@ -44,7 +44,7 @@ get(
 
 dbmf = DeutscheBahnMarkenFarben()
 
-dbmf.print_colors()  # Returns a list of available colours.
+dbmf.print_colors()  # Print and return a list of available colours.
 dbmf.get('red')  # Returns '#ec0016'
 dbmf.get('red', 200, 'rgb')  # Returns (252, 200, 195)
 
