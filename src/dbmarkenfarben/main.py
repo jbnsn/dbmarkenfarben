@@ -15,6 +15,8 @@ class DeutscheBahnMarkenFarben:
         dbmf.get('red')  # Returns '#ec0016'
         dbmf.get('red', 200, 'rgb')  # Returns (252, 200, 195)
 
+        html_color_palette = [dbmf.get(i) for i in dbmf.print_colors()]
+
     """
 
     def __init__(self):
