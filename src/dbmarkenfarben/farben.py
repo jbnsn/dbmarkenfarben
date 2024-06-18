@@ -176,13 +176,15 @@ class DeutscheBahnMarkenFarben:
             return_format='html'
             ):
         """
-        Get the color code for the given color name.
+        Get the color code for the given Deutsche Bahn brand color.
+
+        Reference:
+        https://marketingportal.extranet.deutschebahn.com/marketingportal/Marke-und-Design/Basiselemente/Farbe
 
         Parameters
         ----------
         color_name : str
             Name of the Deutsche Bahn AG brand colour.
-            https://marketingportal.extranet.deutschebahn.com/marketingportal/Marke-und-Design/Basiselemente/Farbe
         color_saturation : int, optional
             100, 200, 300, 400, 500, 600, 700 or 800. The default is 500.
         return_format : str, optional
