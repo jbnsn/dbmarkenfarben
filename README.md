@@ -29,7 +29,7 @@ pip install -U dbmarkenfarben
 
 ```Python
 
-import src.dbmarkenfarben as dbmf
+import dbmarkenfarben as dbmf
 
 db_colors = dbmf.DeutscheBahnMarkenFarben()
 
