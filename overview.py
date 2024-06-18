@@ -6,8 +6,6 @@ import pandas as pd
 
 db_colors = dbmf.DeutscheBahnMarkenFarben()
 
-# %% Plot
-
 dbcolor_names = [
     'yellow', 'orange', 'red',
     'burgundy', 'pink', 'violet',
@@ -32,6 +30,8 @@ df = pd.DataFrame(
 for name in dbcolor_names:
     for shade in dbcolor_shades:
         df.loc[shade, name] = db_colors.get(name, shade)
+
+# %% Plot
 
 # Create a figure and axis
 fig, ax = plt.subplots(figsize=(8, 8))
