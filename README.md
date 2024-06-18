@@ -5,6 +5,10 @@ Get the html or rgb code of one of the [Deutsche Bahn AG brand colours](https://
 
 ![Brand colours of Deutsche Bahn AG](overview.png)
 
+```Python
+db_colors.get('red', 200)  # Returns '#fcc8c3'
+```
+
 ## Install and Update
 
 *dbmarkenfarben* is available via [PyPi](https://pypi.org/project/dbmarkenfarben/).
