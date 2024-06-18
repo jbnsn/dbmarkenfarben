@@ -65,7 +65,7 @@ ax.spines['bottom'].set_visible(False)
 ax.tick_params(axis='both', which='both', length=0)
 
 # Save the plot
-plt.savefig('overview.png', bbox_inches='tight')
+plt.savefig('overview.png', bbox_inches='tight', dpi=300)
 
 # Show the plot
 plt.show()
