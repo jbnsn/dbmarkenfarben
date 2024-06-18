@@ -66,7 +66,7 @@ class DeutscheBahnMarkenFarben:
             ('green', 100): '#E2F3E5',
             ('green', 200): '#BDDBB9',
             ('green', 300): '#8CBC80',
-            ('green', 400): '#8CBC80',
+            ('green', 400): '#66A558',
             ('green', 500): '#408335',
             ('green', 600): '#2A7230',
             ('green', 700): '#165C27',
@@ -115,7 +115,7 @@ class DeutscheBahnMarkenFarben:
             # ---- Turquoise
             ('turquoise', 100): '#E3F5F4',
             ('turquoise', 200): '#BEE2E5',
-            ('turquoise', 300): '#3CB5AE',
+            ('turquoise', 300): '#83CACA',
             ('turquoise', 400): '#3CB5AE',
             ('turquoise', 500): '#00A099',
             ('turquoise', 600): '#008984',
