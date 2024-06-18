@@ -5,15 +5,38 @@ Get the html or rgb code of one of the [Deutsche Bahn AG brand colours](https://
 
 ![Brand colours of Deutsche Bahn AG](https://marketingportal.extranet.deutschebahn.com/resource/blob/9688184/6b6042de4d93449f5546cdd01ca94ebe/Bild_1-data.png)
 
-## Install
+## Install and Update
+
+*dbmarkenfarben* is available via [PyPi](https://pypi.org/project/dbmarkenfarben/).
+
+### Install
 
 `pip install dbmarkenfarben`
 
-## Update
+### Update
 
 `pip install --upgrade dbmarkenfarben` or `pip install -U dbmarkenfarben`
 
+## Example usage
+
+```Python
+
+import src.dbmarkenfarben as dbmf
+
+db_colors = dbmf.DeutscheBahnMarkenFarben()
+
+db_colors.print_colors()  # Print and return a list of available colours.
+
+db_colors.colors  # Return a dictionary of available colours.
+
+db_colors.get('red')  # Returns '#ec0016'
+db_colors.get('red', 200)  # Returns '#fcc8c3'
+db_colors.get('red', 200, 'rgb')  # Returns (252, 200, 195)
+
+```
+
 ## `get` function
+
 ```Python
 get(
     color_name,
@@ -44,22 +67,4 @@ get(
     Color code : str (html) OR tuple (rgb)
 
     """
-```
-
-### Example usage
-
-```Python
-
-import src.dbmarkenfarben as dbmf
-
-db_colors = dbmf.DeutscheBahnMarkenFarben()
-
-db_colors.print_colors()  # Print and return a list of available colours.
-
-db_colors.colors  # Return a dictionary of available colours.
-
-db_colors.get('red')  # Returns '#ec0016'
-db_colors.get('red', 200)  # Returns '#fcc8c3'
-db_colors.get('red', 200, 'rgb')  # Returns (252, 200, 195)
-
 ```
