@@ -11,11 +11,19 @@ Get the html or rgb code of one of the [Deutsche Bahn AG brand colours](https://
 
 ### Install
 
-`pip install dbmarkenfarben`
+```Python
+pip install dbmarkenfarben
+```
 
 ### Update
 
-`pip install --upgrade dbmarkenfarben` or `pip install -U dbmarkenfarben`
+```Python
+pip install --upgrade dbmarkenfarben
+```
+or
+```
+pip install -U dbmarkenfarben
+```
 
 ## Example usage
 
