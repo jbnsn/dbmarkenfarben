@@ -8,7 +8,7 @@ db_colors.get('red', 200)  # Returns '#fcc8c3'
 
 ![Brand colours of Deutsche Bahn AG](overview.png)
 
-`['blue', 'burgundy', 'cool-grey', 'cyan', 'green', 'light-green', 'orange', 'pink', 'red', 'turquoise', 'violet', 'warm-cyan', 'warm-grey', 'yellow']`
+`['blue', 'burgundy', 'cool-grey', 'cyan', 'green', 'light-green', 'orange', 'pink', 'red', 'turquoise', 'violet', 'warm-grey', 'yellow']`
 
 ## Install and Update
 
