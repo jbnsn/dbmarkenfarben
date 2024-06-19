@@ -6,11 +6,9 @@ Get the html or rgb code of one of the [Deutsche Bahn AG brand colours](https://
 db_colors.get('red', 200)  # Returns '#fcc8c3'
 ```
 
-```Python
-['blue', 'burgundy', 'cool-grey', 'cyan', 'green', 'light-green', 'orange', 'pink', 'red', 'turquoise', 'violet', 'warm-cyan', 'warm-grey', 'yellow']
-```
-
 *... [see more examples](https://github.com/jbnsn/dbmarkenfarben?tab=readme-ov-file#example-usage)*
+
+`['blue', 'burgundy', 'cool-grey', 'cyan', 'green', 'light-green', 'orange', 'pink', 'red', 'turquoise', 'violet', 'warm-cyan', 'warm-grey', 'yellow']`
 
 ![Brand colours of Deutsche Bahn AG](overview.png)
 
