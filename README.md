@@ -7,8 +7,8 @@ Get the html or rgb code of one of the [Deutsche Bahn AG brand colours](https://
 
 **Example:**
 ```Python
-In[1]: db_colors.get('red', 200)
-Out[1]: '#fcc8c3'
+In: db_colors.get('red', 200)
+Out: '#fcc8c3'
 ```
 
 *... [see more examples](https://github.com/jbnsn/dbmarkenfarben?tab=readme-ov-file#example-usage)*
