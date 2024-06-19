@@ -132,16 +132,6 @@ class DeutscheBahnMarkenFarben:
             ('violet', 700): '#581D70',
             ('violet', 800): '#421857',
 
-            # ---- Warm cyan
-            ('warm-cyan', 800): '#004b6d',
-            ('warm-cyan', 700): '#006a96',
-            ('warm-cyan', 600): '#0087b9',
-            ('warm-cyan', 500): '#309fd1',
-            ('warm-cyan', 400): '#55b9e6',
-            ('warm-cyan', 300): '#84cfef',
-            ('warm-cyan', 200): '#bbe6f8',
-            ('warm-cyan', 100): '#e5faff',
-
             # ---- Warm grey
             ('warm-grey', 100): '#f5f4f1',
             ('warm-grey', 200): '#ddded6',
