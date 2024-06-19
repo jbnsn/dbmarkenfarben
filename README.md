@@ -1,14 +1,14 @@
 # Deutsche Bahn Markenfarben
 Get the html or rgb code of one of the [Deutsche Bahn AG brand colours](https://marketingportal.extranet.deutschebahn.com/marketingportal/Marke-und-Design/Basiselemente/Farbe).
 
-**Example** *... [see more examples](https://github.com/jbnsn/dbmarkenfarben?tab=readme-ov-file#example-usage)***:**
+**Example** *([see more examples](https://github.com/jbnsn/dbmarkenfarben?tab=readme-ov-file#example-usage)***):**
 ```Python
 db_colors.get('red', 200)  # Returns '#fcc8c3'
 ```
 
-`['blue', 'burgundy', 'cool-grey', 'cyan', 'green', 'light-green', 'orange', 'pink', 'red', 'turquoise', 'violet', 'warm-cyan', 'warm-grey', 'yellow']`
-
 ![Brand colours of Deutsche Bahn AG](overview.png)
+
+`['blue', 'burgundy', 'cool-grey', 'cyan', 'green', 'light-green', 'orange', 'pink', 'red', 'turquoise', 'violet', 'warm-cyan', 'warm-grey', 'yellow']`
 
 ## Install and Update
 
