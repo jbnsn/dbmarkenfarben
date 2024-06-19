@@ -16,7 +16,7 @@ long_description = (here / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="dbmarkenfarben",  # Required
-    version="0.6.3",  # Required
+    version="0.6.4",  # Required
     description="Get the html or rgb code of one of the Deutsche Bahn AG brand colours.",  # Optional
     long_description_content_type="text/markdown",  # Optional (see note above)
     url="https://github.com/jbnsn/dbmarkenfarben",  # Optional
