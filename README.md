@@ -3,7 +3,9 @@ Get the html or rgb code of one of the [Deutsche Bahn AG brand colours](https://
 
 **Application example** *([see more examples](https://github.com/jbnsn/dbmarkenfarben?tab=readme-ov-file#example-usage)***):**
 ```Python
+db_colors.get('red')  # Returns '#ec0016'
 db_colors.get('red', 200)  # Returns '#fcc8c3'
+db_colors.get('red', 200, 'rgb')  # Returns (252, 200, 195)
 ```
 
 ![Brand colours of Deutsche Bahn AG](overview/overview.png)
