@@ -1,7 +1,7 @@
 # Deutsche Bahn Markenfarben
 Get the html or rgb code of one of the [Deutsche Bahn AG brand colours](https://marketingportal.extranet.deutschebahn.com/marketingportal/Marke-und-Design/Basiselemente/Farbe).
 
-**Application example** *([see more examples](https://github.com/jbnsn/dbmarkenfarben?tab=readme-ov-file#example-usage)***):**
+**Application examples** *([see more examples](https://github.com/jbnsn/dbmarkenfarben?tab=readme-ov-file#example-usage)***):**
 ```Python
 db_colors.get('red')  # Returns '#ec0016'
 db_colors.get('red', 200)  # Returns '#fcc8c3'
