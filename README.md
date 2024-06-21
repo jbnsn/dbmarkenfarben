@@ -6,7 +6,7 @@ Get the html or rgb code of one of the [Deutsche Bahn AG brand colours](https://
 db_colors.get('red', 200)  # Returns '#fcc8c3'
 ```
 
-![Brand colours of Deutsche Bahn AG](overview.png)
+![Brand colours of Deutsche Bahn AG](overview/overview.png)
 
 `['blue', 'burgundy', 'cool-grey', 'cyan', 'green', 'light-green', 'orange', 'pink', 'red', 'turquoise', 'violet', 'warm-grey', 'yellow']`
 

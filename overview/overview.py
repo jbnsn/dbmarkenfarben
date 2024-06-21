@@ -1,4 +1,4 @@
-"""Overview."""
+"""Create a graphical overview of all available colours."""
 
 import dbmarkenfarben as dbmf
 import matplotlib.pyplot as plt
