@@ -152,6 +152,10 @@ class DeutscheBahnMarkenFarben:
             ('yellow', 700): '#FF9B00',
             ('yellow', 800): '#FF7A00',
 
+            # ---- BW
+            ('black'): '#000000',
+            ('white'): '#FFFFFF',
+
         }
 
     def html_to_rgb(self, hex_color):
