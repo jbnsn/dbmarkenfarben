@@ -47,6 +47,7 @@ db_colors = (
 
 db_colors = pd.read_csv(
     "https://github.com/jbnsn/dbmarkenfarben/blob/main/overview/colors.csv?raw=true",
+    index_col=[0]
     )
 
 # ---- Save
