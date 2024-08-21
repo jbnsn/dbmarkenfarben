@@ -110,7 +110,8 @@ db_colors = pd.read_csv(
         #f5f4f1,#ddded6,#bcbbb2,#9c9a8e,#858379,#747067,#4f4b41,#38342f
         #FFFFDC,#FFFFAF,#FFF876,#FFF000,#FFD800,#FFBB00,#FF9B00,#FF7A00
         """
-        .strip()
+        .replace(" ", "")
         )
     )
+
 ```
