@@ -50,4 +50,4 @@ db_colors = pd.read_csv(
 
 # ---- Save
 
-# db_colors.to_csv("./overview/colors.csv", index=False)
+db_colors.to_csv("./overview/colors.csv")
