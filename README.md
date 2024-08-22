@@ -140,6 +140,7 @@ class DeutscheBahnMarkenFarben:
 
 db_colors = DeutscheBahnMarkenFarben()
 
-db_colors.get('red', 500)  # Returns '#ec0016'
+db_colors.get('red')  # Equivalent to db_colors.get('red', 500); Returns '#ec0016';
+db_colors.get('red', 400)  # Returns '#f75056'
 
 ```
