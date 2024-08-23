@@ -84,7 +84,7 @@ get(
     """
 ```
 
-# A quick and dirty code for the use of all the DB brand colors
+# Quick and dirty
 ```Python
 """A quick and dirty code for the use of all the DB brand colors."""
 
