@@ -73,8 +73,8 @@ ax.set_yticks([j for j in [i+0.5 for i in range(df.shape[0])][::-1]])
 ax.set_xticklabels(df.columns, rotation=90)
 ax.set_yticklabels(df.index)
 ax.set_xlabel("Farbenname")
-ax.set_ylabel("Shade")
-ax.set_title("Übersicht Deutsche Bahn Markenfarben")
+ax.set_ylabel("Farbton")
+# ax.set_title("Übersicht Deutsche Bahn Markenfarben")
 
 # Set the aspect ratio to be equal
 ax.set_aspect('equal')
