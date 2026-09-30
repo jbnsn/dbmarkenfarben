@@ -1,35 +1,56 @@
 """Create a graphical overview of all available colours."""
 
+import sys
+from pathlib import Path
+
+# Ensure the local src package is imported instead of an installed one
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
+for _mod in [m for m in sys.modules if m == "dbmarkenfarben" or m.startswith("dbmarkenfarben.")]:
+    del sys.modules[_mod]
+
 import dbmarkenfarben as dbmf
 import matplotlib.pyplot as plt
 import pandas as pd
 
+assert dbmf.__file__ is not None and "src" in Path(dbmf.__file__).parts, (
+    f"dbmarkenfarben imported from unexpected location: {dbmf.__file__}"
+)
+
 db_colors = dbmf.DeutscheBahnMarkenFarben()
 
 dbcolor_names = [
-    'yellow', 'orange', 'red',
-    'burgundy', 'pink', 'violet',
-    'blue', 'cyan', 'turquoise',
-    'green', 'light-green', 'warm-grey',
-    'cool-grey'
+    # 900 to 100
+    'grey',
+    'db-red',
+    'lilac',
+    's-bahn-green',
+    # 500 only
+    'cold-black',
+    'ersatzverkehrs-purpur',
+    'service-rot',
+    'wegeleitung-blau',
+    'white'
     ]
 
 dbcolor_shades = [
+    900,
     800, 700,
     600, 500,
     400, 300,
-    200, 100
+    200, 100,
+    None
     ]
 
 df = pd.DataFrame(
-    index=dbcolor_shades,
+    index=[str(i) for i in dbcolor_shades],
     columns=dbcolor_names
     )
 
 # Populate dataframe
 for name in dbcolor_names:
     for shade in dbcolor_shades:
-        df.loc[shade, name] = db_colors.get(name, shade)
+        print(name, shade)
+        df.loc[str(shade), name] = db_colors.get(name, shade) or '#ffffff'
 
 # %% Plot
 
@@ -51,6 +72,9 @@ ax.set_xticks([i+0.5 for i in range(df.shape[1])])
 ax.set_yticks([j for j in [i+0.5 for i in range(df.shape[0])][::-1]])
 ax.set_xticklabels(df.columns, rotation=90)
 ax.set_yticklabels(df.index)
+ax.set_xlabel("Farbenname")
+ax.set_ylabel("Shade")
+ax.set_title("Übersicht Deutsche Bahn Markenfarben")
 
 # Set the aspect ratio to be equal
 ax.set_aspect('equal')

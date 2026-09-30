@@ -1,3 +1,3 @@
 # Deutsche Bahn Markenfarben
-`['blue', 'burgundy', 'cool-grey', 'cyan', 'green', 'light-green', 'orange', 'pink', 'red', 'turquoise', 'violet', 'warm-grey', 'yellow']`
+`['cold-black', 'db-red', 'ersatzverkehrs-purpur', 'grey', 'lilac', 's-bahn-green', 'service-rot', 'wegeleitung-blau', 'white']`
 ![Brand colors of Deutsche Bahn AG](overview.png)

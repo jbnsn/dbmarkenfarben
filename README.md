@@ -1,5 +1,5 @@
 # Deutsche Bahn Markenfarben
-Get the html or rgb code of one of the [Deutsche Bahn AG brand colors](https://marketingportal.extranet.deutschebahn.com/marketingportal/Marke-und-Design/Basiselemente/Farbe).
+Get the html or rgb code of one of the [Deutsche Bahn AG brand colors](https://marketingportal.extranet.deutschebahn.com/marketingportal/Marke-und-Design/Basiselemente/Markenfarben).
 
 **Application examples** *([full example](https://github.com/jbnsn/dbmarkenfarben?tab=readme-ov-file#example-usage)***):**
 ```Python
@@ -10,7 +10,7 @@ db_colors.get('red', 200, 'rgb')  # Returns (252, 200, 195)
 
 ![Brand colors of Deutsche Bahn AG](overview/overview.png)
 
-`['blue', 'burgundy', 'cool-grey', 'cyan', 'green', 'light-green', 'orange', 'pink', 'red', 'turquoise', 'violet', 'warm-grey', 'yellow']`
+`['cold-black', 'db-red', 'ersatzverkehrs-purpur', 'grey', 'lilac', 's-bahn-green', 'service-rot', 'wegeleitung-blau', 'white']`
 
 ## Install and Update
 
@@ -97,40 +97,29 @@ class DeutscheBahnMarkenFarben:
     def __init__(self):
         self.colors = (
             pd.DataFrame(
-                {"blue":  ["#E0EFFB", "#B4D5F6", "#73AEF4", "#347DE0",
-                           "#1455C0", "#0C3992", "#0A1E6E", "#061350"],
-                 "burgundy": ["#F4E8ED", "#EDCBD6", "#DA9AA8", "#C0687B",
-                              "#A9455D", "#8C2E46", "#641E32", "#4D0820"],
-                 "cool-grey": ["#f0f3f5", "#d7dce1", "#afb4bb", "#878c96",
-                               "#646973", "#3c414b", "#282d37", "#131821"],
-                 "cyan": ["#E5FAFF", "#BBE6F8", "#84CFEF", "#55B9E6",
-                          "#309FD1", "#0087B9", "#006A96", "#004B6D"],
-                 "green": ["#E2F3E5", "#BDDBB9", "#8CBC80", "#66A558",
-                           "#408335", "#2A7230", "#165C27", "#154A26"],
-                 "light-green": ["#EBF7DD", "#C9EB9E", "#9FD45F", "#78BE14",
-                                 "#63A615", "#508B1B", "#44741A", "#375F15"],
-                 "orange": ["#FFF4D8", "#FCE3B4", "#FACA7F", "#F8AB37",
-                            "#F39200", "#D77B00", "#C05E00", "#A24800"],
-                 "pink": ["#FDEEF8", "#F9D2E5", "#F4AECE", "#EE7BAE",
-                          "#E93E8F", "#DB0078", "#B80065", "#970052"],
-                 "red": ["#fee6e6", "#fcc8c3", "#fa9090", "#f75056",
-                         "#ec0016", "#C50014", "#9B000E", "#740009"],
-                 "turquoise": ["#E3F5F4", "#BEE2E5", "#83CACA", "#3CB5AE",
-                               "#00A099", "#008984", "#006E6B", "#005752"],
-                 "violet": ["#F4EEFA", "#E0CDE4", "#C2A1C7", "#9A6CA6",
-                            "#814997", "#6E368C", "#581D70", "#421857"],
-                 "warm-cyan": ["#e5faff", "#bbe6f8", "#84cfef", "#55b9e6",
-                               "#309fd1", "#0087b9", "#006a96", "#004b6d"],
-                 "warm-grey": ["#f5f4f1", "#ddded6", "#bcbbb2", "#9c9a8e",
-                               "#858379", "#747067", "#4f4b41", "#38342f"],
-                 "yellow": ["#FFFFDC", "#FFFFAF", "#FFF876", "#FFF000",
-                            "#FFD800", "#FFBB00", "#FF9B00", "#FF7A00"]},
+                {"grey": ["#C9CCD2", "#A3A8B2", "#848B9A", "#767E8F",
+                          "#6B7282", "#596273", "#454D5D", "#262C38"],
+                 "db-red": ["#FDB7BF", "#FC808C", "#FA4A59", "#FF002B",
+                            "#EC0016", "#C20012", "#9E000F", "#5F0009"],
+                 "lilac": ["#CCBEFF", "#AA99FF", "#8E80D4", "#8174BF",
+                           "#7569AC", "#62588F", "#4E4770", "#2C283C"],
+                 "s-bahn-green": ["#CCE7CC", "#BDDBB9", "#8CBC80", "#66A558",
+                                  "#408335", "#2A7230", "#165C27", "#154A26"]},
                 index=[100, 200, 300, 400, 500, 600, 700, 800]
                 )
             )
+        self.function_colors = {
+            "wegeleitung-blau": "#21276B",
+            "ersatzverkehrs-purpur": "#9B1B60",
+            "service-rot": "#4D0820",
+            "cold-black": "#090F1B",
+            "white": "#FFFFFF",
+            }
 
     def get(self, color_name='red', color_saturation=500):
         """Return the HEX code of a color."""
+        if color_name in self.function_colors:
+            return self.function_colors[color_name]
         try:
             return self.colors.T.loc[color_name, color_saturation]
         except KeyError:
@@ -140,7 +129,8 @@ class DeutscheBahnMarkenFarben:
 
 db_colors = DeutscheBahnMarkenFarben()
 
-db_colors.get('red')  # Equivalent to db_colors.get('red', 500); Returns '#ec0016';
-db_colors.get('red', 400)  # Returns '#f75056'
+db_colors.get('db-red')  # Equivalent to db_colors.get('db-red', 500); Returns '#EC0016';
+db_colors.get('db-red', 400)  # Returns '#FF002B'
+db_colors.get('white')  # Returns '#FFFFFF'
 
 ```
